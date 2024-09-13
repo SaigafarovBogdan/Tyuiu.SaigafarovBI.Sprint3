@@ -10,7 +10,7 @@ namespace Tyuiu.SaigafarovBI.Sprint3.Task0.V26.Lib
             {
                 res *= (Math.Pow(2.0, i) / (i + 1.0)) * Math.Cos(1.8);
             }
-            return res;
+            return Math.Round(res,3);
         }
     }
 }
