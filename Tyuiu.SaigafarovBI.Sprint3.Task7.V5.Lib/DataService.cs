@@ -17,7 +17,7 @@ namespace Tyuiu.SaigafarovBI.Sprint3.Task7.V5.Lib
                     count++;
                     continue;
                 }
-                y = ((2 * Math.Sin(x)) / (3 * x + 1.5)) + Math.Cos(x) - 7 * x * 2;
+                y = ((2 * Math.Sin(x)) / (3 * x + 1.2)) + Math.Cos(x) - 7 * x * 2;
                 y = Math.Round(y,2);
                 valueArray[count] = y;
                 count++;
