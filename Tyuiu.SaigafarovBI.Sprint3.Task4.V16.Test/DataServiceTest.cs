@@ -10,7 +10,7 @@ namespace Tyuiu.SaigafarovBI.Sprint3.Task4.V16.Test
             DataService dataService = new DataService();
             int startValue = -5;
             int stopValue = 5;
-            Assert.AreEqual(6.71923715799238, dataService.Calculate(startValue,stopValue));
+            Assert.AreEqual(6.719, dataService.Calculate(startValue,stopValue));
         }
     }
 }

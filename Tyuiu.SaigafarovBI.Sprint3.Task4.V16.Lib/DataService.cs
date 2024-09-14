@@ -12,7 +12,7 @@ namespace Tyuiu.SaigafarovBI.Sprint3.Task4.V16.Lib
                 if (i == 0) continue;
                 res *= ((Math.Cos(i) + i) / i) + 0.25;
             }
-            return res;
+            return Math.Round(res,3);
 
         }
         
