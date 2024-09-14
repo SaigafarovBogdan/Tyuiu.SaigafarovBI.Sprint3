@@ -1,6 +1,5 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using Tyuiu.SaigafarovBI.Sprint3.Task4.V16.Lib;
-namespace Tyuiu.SaigafarovBI.Sprint3.Task4.V16
+﻿using Tyuiu.SaigafarovBI.Sprint3.Task6.V1.Lib;
+namespace Tyuiu.SaigafarovBI.Sprint3.Task6.V1
 {
     internal class Program
     {
@@ -11,17 +10,18 @@ namespace Tyuiu.SaigafarovBI.Sprint3.Task4.V16
             Console.WriteLine("***************************************************************************");
 
             DataService dataService = new DataService();
-            int startValue = -5;
-            int stopValue = 5;
+            int startValue = 11;
+            int endValue = 17;
 
-            Console.WriteLine("Старт шага = " + startValue);
-            Console.WriteLine("Конец шага = " + stopValue);
+            Console.WriteLine("Начало отрезка = " + startValue);
+            Console.WriteLine("Конец отрезка = " + endValue);
 
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("Произведение ряда = " + dataService.Calculate(startValue, stopValue));
+
+            Console.WriteLine("Сумма делителей = " + dataService.GetSumTheDivisors(startValue, endValue));
 
             Console.ReadKey();
         }
