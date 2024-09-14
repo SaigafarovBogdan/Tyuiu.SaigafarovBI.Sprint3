@@ -13,7 +13,7 @@ namespace Tyuiu.SaigafarovBI.Sprint3.Task5.V16.Test
             int stopValue1 = 3;
             int startValue2 = 1;
             int stopValue2 = 10;
-            Assert.AreEqual(6.719, ds.GetSumSumSeries(x,startValue1,startValue2,stopValue1,stopValue2));
+            Assert.AreEqual(745.748, ds.GetSumSumSeries(x,startValue1,startValue2,stopValue1,stopValue2));
         }
     }
 }
