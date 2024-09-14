@@ -1,5 +1,5 @@
-﻿using Tyuiu.SaigafarovBI.Sprint3.Task0.V26.Lib;
-namespace Tyuiu.SaigafarovBI.Sprint3.Task0.V26
+﻿using Tyuiu.SaigafarovBI.Sprint3.Task2.V20.Lib;
+namespace Tyuiu.SaigafarovBI.Sprint3.Task2.V20
 {
     internal class Program
     {
@@ -11,8 +11,10 @@ namespace Tyuiu.SaigafarovBI.Sprint3.Task0.V26
 
             DataService dataService = new DataService();
             int startValue = 1;
-            int endValue = 9;
+            int endValue = 6;
+            int value = 1;
 
+            Console.WriteLine("Значение переменной X = " + value);
             Console.WriteLine("Старт шага = " + startValue);
             Console.WriteLine("Конец шага = " + endValue);
 
@@ -21,7 +23,7 @@ namespace Tyuiu.SaigafarovBI.Sprint3.Task0.V26
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Произведение ряда = " + dataService.GetMultiplySeries(startValue, endValue));
+            Console.WriteLine("Произведение ряда = " + dataService.GetMultiplySeries(value,startValue, endValue));
 
             Console.ReadKey();
         }
